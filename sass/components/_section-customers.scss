@@ -1,0 +1,32 @@
+.container-regular {
+  margin: 0%;
+  padding: 0%;
+
+  h2 {
+    padding-top: 59px;
+    padding-bottom: 44px;
+  }
+}
+
+.client {
+  display: flex;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  padding-bottom: 151px;
+}
+
+.icons-client {
+  background-color: var(--color-white);
+  fill: var(--color-logo-clientes);
+  margin-right: 30px;
+  border: 1px solid var(--color-logo-clientes);
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover, &:active {
+    fill: var(--color-blue);
+    border: 1px solid var(--color-blue);
+  }
+}
+

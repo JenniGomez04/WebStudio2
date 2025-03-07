@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="sass/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Titulo de la pestaña del navegador-->
+
+    <title>WebStudio</title>
+  </head>
+
+  <!-- Encabezado de la Web apartir de aqui-->
+
+  <body>
+    <header class="header">
+      <nav class="container">
+        <div class="menu-left">
+          <div class="logo"><a href="#">WebStudio</a></div>
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="index.html" class="link">Estudio</a>
+            </li>
+            <li class="nav__item">
+              <a href="portfolio.html" class="link active">Portafolio</a>
+            </li>
+            <li class="nav__item"><a href="#" class="link">Contacto</a></li>
+          </ul>
+        </div>
+        <ul class="menu-right">
+          <li class="menu-right__item">
+            <svg class="menu-right__icon--sobre" width="16" height="12">
+              <use xlink:href="./images/icons.svg#icon-sobre-menu"></use>
+            </svg>
+            <a class="contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="menu-right__item">
+            <svg class="menu-right__icon--movil" width="10" height="18">
+              <use xlink:href="./images/icons.svg#icon-movil"></use>
+            </svg>
+            <a class="contact" href="tel:+525555296000">+525555296000</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--btaz= botón azul de portafolio
+	btgr= botón gris de portafolio-->
+    <main>
+      <div class="container">
+        <div class="block-button">
+          <div id="button-filter">
+            <ul class="list-button">
+              <li class="list-button__button">
+                <button class="btaz" type="button">Todo</button>
+              </li>
+              <li class="list-button__button">
+                <button class="btgr" type="button">Sitios-web</button>
+              </li>
+              <li class="list-button__button">
+                <button class="btgr" type="button">Aplicaciones</button>
+              </li>
+              <li class="list-button__button">
+                <button class="btgr" type="button">Diseño</button>
+              </li>
+              <li class="list-button__button">
+                <button class="btgr" type="button">Marketing</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--CONTAINER PORTAFOLIO-->
+      <!--<div class="container-portfolio"> -->
+      <section class="container-briefcase">
+        <div id="briefcase">
+          <ul class="list-portfolio">
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Tecnoduck es una plataforma de distribución de coronavirus de
+                  última generación. Las compañías usan esta plataforma para el
+                  espionaje digital y los ataques a los servidores seguros de la
+                  competencia.
+                </p>
+              </div>
+              <img
+                class="box__image"
+                src="images/tecnoduck.jpg"
+                alt="Tecnoduck Sitio Web"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Tecnoduck</h3>
+              <span class="box__subtitle">Sitio</span>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/poster.jpg"
+                alt="Póster de Nueva Orleans"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Póster de Nueva Orleans</h3>
+              <h3 class="box__title">vs Estrella Dorada</h3>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/restaurant.jpg"
+                alt="Restaurante Seafood"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Restaurante Seafood</h3>
+              <span class="box__subtitle">Aplicaciones</span>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/project_prime.jpg"
+                alt="Proyecto Prime"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Proyecto Prime</h3>
+              <span class="box__subtitle">Marketing</span>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/project_in_boxes.jpg"
+                alt="Proyecto Cajas"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Proyecto Cajas</h3>
+              <span class="box__subtitle">Aplicaciones</span>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/the_inspiration.jpg"
+                alt="La inspiración no tiene limites"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">La inspiración no tiene límites</h3>
+              <span class="box__subtitle">Sitio-web</span>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/limited_edition.jpg"
+                alt="Edición Limitada"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Edición Limitada</h3>
+              <span class="box__subtitle">Diseño</span>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/project_lab.jpg"
+                alt="Proyecto LAB"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Proyecto LAB</h3>
+              <span class="box__subtitle">Marketing</span>
+            </li>
+
+            <li class="box">
+              <div class="box-animation">
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Asperiores aliquid id culpa deleniti? Magnam minima nesciunt
+                  cum.
+                </p>
+              </div>
+              <img
+                src="images/growing_business.jpg"
+                alt="Negocio en Crecimiento"
+                width="370"
+                height="294"
+              />
+              <h3 class="box__title">Negocio en Crecimiento</h3>
+              <span class="box__subtitle">Aplicaciones</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="first-block">
+        <a class="logo" href="webstudio">WebStudio</a>
+        <address class="first-block__direction">
+          <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+          <div class="first-block__menu-footer" id="menuf">
+            <a class="first-block__contact" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+            <a class="first-block__contact" href="tel:525555296000"
+              >+525555296000</a
+            >
+          </div>
+        </address>
+      </div>
+      <div class="networks">
+        <h3 class="networks__title">ENCUENTRANOS EN</h3>
+        <ul class="networks__list">
+          <li class="social">
+            <svg
+              class="social__icons"
+              width="44"
+              height="44"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 449.69 449.69"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #2196f3;
+                  }
+                  .cls-2 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <g id="Capa_2" data-name="Capa 2">
+                <g id="Layer_2" data-name="Layer 2">
+                  <circle
+                    class="cls-1"
+                    cx="224.85"
+                    cy="224.85"
+                    r="224.85"
+                    transform="translate(-93.13 224.85) rotate(-45)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M158.71,81.62H291c42.49,0,77.44,34.95,77.44,77.44V290.64c0,42.49-34.95,77.44-77.44,77.44H158.71c-42.48,0-77.44-34.95-77.44-77.44V159.06c0-42.49,35-77.44,77.44-77.44Zm143.23,50h0a16.67,16.67,0,0,1,16.45,16.44h0a16.68,16.68,0,0,1-16.45,16.45h0a16.23,16.23,0,0,1-16.44-16.45h0a16.22,16.22,0,0,1,16.44-16.44ZM224.5,146.72h.69c42.49,0,78.13,35.64,78.13,78.13h0c0,43.17-35.64,78.12-78.13,78.12h-.69c-42.48,0-77.44-35-77.44-78.12h0c0-42.49,35-78.13,77.44-78.13Zm0,26.73h.69c28.1,0,51.4,23.3,51.4,51.4h0c0,28.78-23.3,52.08-51.4,52.08h-.69c-28.09,0-51.39-23.3-51.39-52.08h0c0-28.1,23.3-51.4,51.39-51.4Zm-65.1-67.16H290.29a53.52,53.52,0,0,1,53.46,53.45V290a53.53,53.53,0,0,1-53.46,53.46H159.4A53.52,53.52,0,0,1,106,290V159.74a53.51,53.51,0,0,1,53.45-53.45Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="social">
+            <svg
+              width="44"
+              height="44"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 449.7 449.69"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #2196f3;
+                  }
+                  .cls-2 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <g id="Capa_3" data-name="Capa 3">
+                <g id="Layer_3" data-name="Layer 3">
+                  <circle
+                    class="cls-1"
+                    cx="224.85"
+                    cy="224.85"
+                    r="224.85"
+                    transform="translate(-93.13 224.85) rotate(-45)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M227.33,184.88c-11.07-58.34,59.09-93.06,100.45-51,0,0,18.46-5.17,34.71-15.51a63.91,63.91,0,0,1-25.85,32.5s22.16-2.95,31.76-8.86c0,0-9.6,19.94-27.33,27.32C350.67,303.05,206.65,384.3,90,317.82c0,0,57.61,3,82-25.11,0,0-35.45,3-53.18-39.88,0,0,13.3,5.17,26.59-1.48,0,0-41.36-6.64-45-56.13,0,0,13.29,10.34,28.07,6.65,0,0-45.79-27.33-20-76.81,0,0,48.75,62,118.91,59.82Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="social">
+            <svg
+              width="44"
+              height="44"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 449.69 449.69"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #2196f3;
+                  }
+                  .cls-2 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <g id="Capa_4" data-name="Capa 4">
+                <g id="Layer_4" data-name="Layer 4">
+                  <circle
+                    class="cls-1"
+                    cx="224.85"
+                    cy="224.85"
+                    r="224.85"
+                    transform="translate(-93.13 224.85) rotate(-45)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M182.69,394.51H244V253h45.31l9.06-57.16H244V152.63c0-16,15.34-25.09,30-25.09h26.48V80.14l-47.4-2.09c-45.3-2.79-70.4,32.76-70.4,75.28v42.52H131.11V253h51.58Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+          <li class="social">
+            <svg
+              width="44"
+              height="44"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 449.69 449.69"
+            >
+              <defs>
+                <style>
+                  .cls-1 {
+                    fill: #2196f3;
+                  }
+                  .cls-2 {
+                    fill: #fff;
+                    fill-rule: evenodd;
+                  }
+                </style>
+              </defs>
+              <g id="Capa_5" data-name="Capa 5">
+                <g id="Layer_5" data-name="Layer 5">
+                  <circle
+                    class="cls-1"
+                    cx="224.85"
+                    cy="224.85"
+                    r="224.85"
+                    transform="translate(-93.13 224.85) rotate(-45)"
+                  />
+                  <path
+                    class="cls-2"
+                    d="M99.79,179.71h50.64v170H99.79Zm25-86.26a30.63,30.63,0,1,1,0,61.26c-16.88,0-30-13.75-30-30.63s13.13-30.63,30-30.63Zm55.64,86.26h50v23.76a57.85,57.85,0,0,1,48.13-25.63h13.76a57.76,57.76,0,0,1,57.51,57.51v114.4h-50V334.12h0V257.86h0c-.63-19.38-13.76-34.39-33.13-34.39h0c-19.38,0-35.64,15-36.26,34.39h0v91.89h-50Z"
+                  />
+                </g>
+              </g>
+            </svg>
+          </li>
+        </ul>
+      </div>
+      <div class="subscription">
+        <h3 class="subscription__title">SUSCRIBASE AL BOLETIN INFORMATIVO</h3>
+        <form name="subscription_footer">
+          <label for="mail_footer">
+            <input
+              class="email_footer"
+              type="email"
+              name="email"
+              id="mail_footer"
+              placeholder=" Correo electrónico"
+            />
+          </label>
+          <button class="submit_footer" type="submit" name="suscribe">
+            Suscríbase
+            <svg class="icon subscription-icono" width="24" height="24">
+              <use
+                xlink:href="./images/icons.svg#icon-subscription-icono"
+              ></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="js/modal.js"></script>
+  </body>
+</html>

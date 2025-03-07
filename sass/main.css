@@ -1,0 +1,801 @@
+@charset "UTF-8";
+/* color del logo y el menu text-decoration quita la linea
+ *subrayado*/
+a {
+  text-decoration: none;
+  color: #2196F3;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #212121;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0%;
+}
+
+/* Encabezado*/
+.logo {
+  padding-right: 93px;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #2196F3;
+}
+
+.header {
+  background-color: #FFF;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #F5F4FA;
+}
+
+/* container para skills, services y clientes regulares*/
+.container {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+/* Menu 1*/
+.menu-left {
+  display: flex;
+  align-items: center;
+}
+.menu-left > ul {
+  display: flex;
+}
+.menu-left > ul > li {
+  list-style: none;
+  margin-right: 50px;
+}
+.menu-left > ul > li > a {
+  text-decoration: none;
+}
+
+.nav__item a {
+  font-size: 14px;
+  padding: 0 0 26px 0;
+}
+.nav__item a:hover, .nav__item a:active, .nav__item a.active {
+  color: #2196F3;
+  border-bottom: 4px solid #2196F3;
+}
+
+/* Menu 2*/
+.menu-right {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.menu-right > li:last-child {
+  padding-left: 50px;
+}
+.menu-right svg {
+  fill: #757575;
+}
+.menu-right > li svg:hover {
+  fill: #2196F3;
+}
+
+.menu-right__item:hover svg {
+  fill: #2196F3;
+}
+
+.contact {
+  color: #757575;
+}
+
+.container .contact {
+  padding: 0 0 26px 0;
+}
+.container .contact:hover {
+  color: #2196F3;
+  border-bottom: 4px solid #2196F3;
+}
+
+/* Seccion banner css */
+.banner {
+  width: 100%;
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgba(47, 48, 58, 0.4);
+  margin: 0%;
+  height: 600px;
+}
+
+.container-banner > h1 {
+  padding-top: 200px;
+  margin: auto;
+  width: 696px;
+  height: 320px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 44px;
+  color: #FFF;
+}
+
+.button {
+  width: 261px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFF;
+  background: #2196F3;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.button:hover {
+  border: 1px solid #2196F3;
+}
+
+/*Indicaciones para borrar texto del banner y abrir ventana modal*/
+.backdrop {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: #FFF;
+  border-radius: 4px;
+  visibility: visible;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/*Formulario*/
+.form {
+  padding: 0 40px 0 40px;
+}
+
+.box_form {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 15px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.box_form input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+textarea {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.box_form input:active, .box_form input.active .box_form input:focus {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.box_form:hover, .box_form:active, .box_form.active {
+  border: 1px solid #2196F3;
+}
+
+/*border cajas form*/
+.vent_modal {
+  width: 448px;
+  height: 40px;
+}
+
+textarea {
+  padding: 12px 0px;
+  width: 448px;
+  height: 100px;
+}
+
+.form h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23.44px;
+  align-items: center;
+}
+
+.form_label {
+  width: 44px;
+  height: 14px;
+  font-size: 12px;
+  line-height: 14.06px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  cursor: pointer;
+}
+
+.acept {
+  align-content: flex-start;
+  margin: 10px 10px 0;
+}
+
+/*check*/
+#submit {
+  margin-right: 8px;
+}
+
+.acept .form_label {
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.button_form {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3;
+  color: #FFF;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+label .button_form {
+  margin: auto;
+  border: none;
+}
+
+.box_form svg:hover, .box_form svg:active, .box_form svg:focus {
+  fill: #2196F3;
+  stroke: #2196F3;
+}
+
+.for_button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button_form:hover, .button_form:focus {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* Titles de inicio*/
+.container-services__title, .container-profile__title, .container-regular__title {
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  color: #212121;
+}
+
+/* Sección de texto en parrafos de inicio*/
+#container-skills {
+  width: 1200px;
+  padding: 0%;
+  padding-top: 95px;
+  padding-bottom: 94px;
+}
+
+.list-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+}
+
+.list-icon__skills {
+  display: inline-block;
+  width: 270px;
+}
+
+/* Section skills text */
+.skills__title {
+  margin: 0%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #212121;
+}
+
+.recta-skills {
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.recta-skills__icon:hover {
+  border: 1px solid #2196F3;
+}
+
+.skills__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 146%;
+  color: #757575;
+}
+
+/* SECCIÓN DE IMAGENES SERVICES DE INICIO */
+.services {
+  background-color: #FFF;
+}
+
+.container-services__title {
+  padding-bottom: 55px;
+}
+
+#container-services {
+  border-style: none;
+  padding: 0%;
+  margin: 0%;
+  width: 1200px;
+}
+
+.function:last-child {
+  margin-right: 10px;
+}
+.function:hover {
+  border: 1px solid #2196F3;
+}
+
+#images {
+  margin: 0%;
+  padding: 0%;
+  padding-bottom: 94px;
+}
+
+.images__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+  padding-bottom: 94px;
+  margin: 0%;
+}
+.images__list > li {
+  margin-right: auto;
+  display: inline-block;
+  height: auto;
+}
+
+.function__title {
+  width: 370px;
+  height: 70px;
+  transform: translate(0px, -71px);
+  color: #FFF;
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  line-height: 70px;
+  position: absolute;
+  margin: 0%;
+}
+.function__title:hover, .function__title:active {
+  border: 1px solid #2196F3;
+}
+
+/* Sección de perfil de profesionales de inicio*/
+.container-profile {
+  background-color: #F5F4FA;
+  width: 100%;
+}
+
+.container-profile__title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+#container-profile {
+  width: 1200px;
+  display: inline;
+}
+
+.professionals {
+  margin: auto;
+  padding: 0%;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.professionals__profile-box {
+  display: inline-block;
+  padding-bottom: 94px;
+  margin-right: 23px;
+  background-color: #FFF;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 270px;
+  height: 428px;
+  left: calc(50% - 185px);
+  padding: 0%;
+}
+.professionals__profile-box:hover {
+  border: 1px solid #2196F3;
+}
+
+.card__image:hover {
+  border: 1px solid #2196F3;
+}
+
+/* Title sección team */
+.card__title {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+}
+
+/* texto de seccion perfil */
+.card__text {
+  display: inline-flex;
+  padding-bottom: 30px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+}
+
+/*iconos redes sociales en perfiles*/
+.profile-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-icons__list {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.profile-icons__icons {
+  cursor: pointer;
+  fill: #AFB1B8;
+}
+.profile-icons__icons:hover {
+  fill: #2196F3;
+}
+
+/*SECTION CLIENTES REGULARES*/
+.container-regular {
+  margin: 0%;
+  padding: 0%;
+}
+.container-regular h2 {
+  padding-top: 59px;
+  padding-bottom: 44px;
+}
+
+/*TITULO*/
+.client {
+  display: flex;
+  list-style: none;
+  margin: 0%;
+  padding: 0%;
+  padding-bottom: 151px;
+}
+
+.icons-client {
+  background-color: #FFF;
+  fill: #AFB1B8;
+  margin-right: 30px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.icons-client:hover, .icons-client:active {
+  fill: #2196F3;
+  border: 1px solid #2196F3;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  height: 252px;
+  margin: 0%;
+  display: flex;
+  justify-content: start;
+  background-color: #2F303A;
+}
+
+.first-block {
+  padding-top: 60px;
+  padding-left: 120px;
+  background-color: #2F303A;
+}
+
+.first-block__direction {
+  width: 231px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: #FFF;
+}
+
+.first-block__contact {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6588235294);
+}
+.first-block__contact:hover {
+  color: #2196F3;
+}
+
+.networks__title {
+  color: #FFF;
+  align-content: center;
+}
+
+.networks {
+  margin: 55px 0 0 50px;
+  list-style: none;
+}
+
+.networks__list {
+  padding: 0%;
+  list-style: none;
+}
+
+.social {
+  width: 44px;
+  height: 44px;
+  float: left;
+  margin-right: 10px;
+  fill: #FFF;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social:hover, .social:active {
+  background-color: #2196F3;
+}
+
+.social__icons {
+  margin: 12px;
+}
+
+/*Caja suscripción en el footer*/
+.subscription {
+  margin: 55px 0 84px 60px;
+}
+
+.subscription__title {
+  color: #FFF;
+}
+
+.email_footer {
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  margin-right: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px, 4px, 4px) rgba(0, 0, 0, 0.15);
+  background-color: #2F303A;
+  color: #FFF;
+  cursor: pointer;
+}
+.email_footer:hover {
+  border: 1px solid #2196F3;
+}
+
+.submit_footer {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  line-height: 2;
+  border-radius: 4px;
+  color: #FFF;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
+  border: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.submit_footer:hover {
+  border: 1px solid #2196F3;
+}
+
+.icon .subscription-icono:hover {
+  align-items: center;
+}
+
+.submit_footer svg:hover {
+  border: 1px solid #2196F3;
+}
+
+/* Portafolio
+ Active: Activa un elemento (botón y enlace) se pone la ubicación su bordo azul
+Focus: Activa un elemento interactivo (botón y enlace) */
+.btaz {
+  color: #FFF;
+  background-color: #2196F3;
+  border: none;
+  font-weight: 500;
+  padding: 6px 24px;
+  border-radius: 4px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.btaz:hover, .btaz:active {
+  color: #212121;
+  border-color: #2196F3;
+}
+
+.btgr {
+  color: #212121;
+  background-color: #F5F4FA;
+  border: none;
+  font-weight: 500;
+  padding: 6px 24px;
+  border-radius: 4px;
+  line-height: 26px;
+  cursor: pointer;
+}
+.btgr:hover, .btgr:active {
+  color: #2196F3;
+  border-color: #2196F3;
+}
+
+/* Etiquetas link*/
+.link:hover, .link:active {
+  color: #2196F3;
+}
+
+/* CONTAINER PORTAFOLIO */
+.block-button {
+  margin: 0%;
+  width: 100%;
+}
+
+#button-filter {
+  width: 1200px;
+}
+
+.list-button {
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+}
+
+.list-button__button {
+  padding-top: 106px;
+  padding-right: 8px;
+  padding-bottom: 50px;
+  display: block;
+}
+
+/* Aqui termina la lista de botones */
+.container-briefcase {
+  padding: 0%;
+  margin: 0%;
+  background-color: #EEEEEE;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#briefcase {
+  width: 1200px;
+  padding: 0%;
+  margin: 0%;
+  padding-bottom: 82px;
+}
+
+.list-portfolio {
+  padding: 0%;
+  display: flex;
+  margin: 0 auto;
+  flex-flow: row wrap;
+  row-gap: 30px;
+  justify-content: space-between;
+}
+.list-portfolio li {
+  list-style: none;
+  border: 1px solid #EEE;
+}
+
+.box {
+  position: relative;
+  background-color: #FFF;
+  font-style: none;
+  border-bottom-width: 2px;
+  border-bottom-style: inset;
+  border-bottom-color: #EEEEEE;
+  padding-bottom: 20px;
+}
+.box:hover {
+  border: 1px solid #2196F3;
+}
+
+.box__image:hover {
+  border: 1px solid #2196F3;
+}
+
+.box-animation {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  padding: 63px 24px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  background: rgba(33, 150, 243, 0.9);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.box:hover .box-animation {
+  transform: translateY(-140px);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  cursor: pointer;
+  visibility: visible;
+}
+
+.box__title {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.box__subtitle {
+  padding-left: 20px;
+}
+
+/* Contenedor 1,2 y 3 de imagenes de portafolio
+clases para css de textos de imagenes*/
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
+}
+
+span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #757575;
+}/*# sourceMappingURL=main.css.map */

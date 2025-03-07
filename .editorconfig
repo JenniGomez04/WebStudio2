@@ -1,0 +1,12 @@
+# editorconfig.org
+
+root =true #indica que este es el archivo principal
+
+[*]
+charset = utf-8                         # Codificación de caracteres que quiero emplear
+insert_final_newline = true             # Crea caracter de fin de linea
+end_of_line = lf                        # Separar lineas /n
+indent_style = space                    # Utilizar espacios
+indent_size = 2                         # Número de espacios que vamos a utilizar 
+max_line_length = 80                    # Número de caracteres por linea
+trim_trailing_whitespace = true         # Elimina y limpia el codigo borrando espacios al final de la linea

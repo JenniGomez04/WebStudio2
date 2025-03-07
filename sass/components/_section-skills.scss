@@ -1,0 +1,52 @@
+.container-services__title, .container-profile__title, .container-regular__title {
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--color-black);
+}
+
+#container-skills {
+  width: 1200px;
+  padding: 0%;
+  padding-top: 95px;
+  padding-bottom: 94px;
+}
+
+.list-icon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0%;
+}
+
+.list-icon__skills {
+  display: inline-block;
+  width: 270px;
+}
+
+.skills__title {
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--color-black);
+}
+
+.recta-skills {
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.recta-skills__icon:hover {
+  border: 1px solid var(--color-blue);
+}
+
+.skills__text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 146%;
+  color: var(--color-grisc);
+}
+
